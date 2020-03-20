@@ -3,6 +3,7 @@ from django.template import loader
 from django.shortcuts import get_object_or_404, get_list_or_404, render
 from django.urls import reverse
 from django.views import generic
+from django.views.generic import TemplateView
 
 from .models import Question, Choice
 
@@ -51,3 +52,6 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'main/results.html'
+
+class AboutView(TemplateView):
+    template_name = 'main/about.html'

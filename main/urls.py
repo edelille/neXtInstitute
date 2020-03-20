@@ -11,6 +11,6 @@ urlpatterns = [
     path('<int:question_id>/vote/', views.vote, name='vote'),
 
     # about page
-    path('about/', TemplateView.as_view(template_name="about.html")),
+    path('about/', TemplateView.as_view()),
 
 ]
