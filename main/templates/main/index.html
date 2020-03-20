@@ -1,7 +1,10 @@
-<head>
-  <title>INDEX TITLE</title>
-</head>
+<!doctype HTML>
 
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<html>
 <h1>Questions List</h1>
 
 {% if latest_question_list %}
@@ -15,3 +18,7 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+</HTML>
+
+{% endblock content %}

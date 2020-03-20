@@ -1,5 +1,4 @@
 from django.urls import path
-from django.views.generic import TemplateView
 
 from . import views
 
@@ -11,6 +10,12 @@ urlpatterns = [
     path('<int:question_id>/vote/', views.vote, name='vote'),
 
     # about page
-    path('about/', TemplateView.as_view()),
-
+    #Principal Investigator | Teaching | Research | Service | Statement | Photos | Links
+    path('principal-investigator', views.PrincipalInvestigatorView.as_view()),
+    path('teaching', views.TeachingView.as_view()),
+    path('research', views.ResearchView.as_view()),
+    path('service', views.ServiceView.as_view()),
+    path('statement', views.StatementView.as_view()),
+    path('photos',views.PhotosView.as_view()),
+    path('links',views.LinksView.as_view()),
 ]

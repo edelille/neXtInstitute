@@ -48,10 +48,32 @@ class DetailView(generic.DetailView):
     model = Question
     template_name = 'main/detail.html'
 
-
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'main/results.html'
 
-class AboutView(TemplateView):
-    template_name = 'main/about.html'
+
+# Views destined by Ramy
+
+#Principal Investigator | Teaching | Research | Service | Statement | Photos | Links
+
+class PrincipalInvestigatorView(TemplateView):
+    template_name = 'main/principal_investigator.html'
+
+class TeachingView(TemplateView):
+    template_name = 'main/teaching.html'
+
+class ResearchView(TemplateView):
+    template_name = 'main/research.html'
+
+class ServiceView(TemplateView):
+    template_name = 'main/service.html'
+
+class StatementView(TemplateView):
+    template_name = 'main/statement.html'
+
+class PhotosView(TemplateView):
+    template_name = 'main/photos.html'
+
+class LinksView(TemplateView):
+    template_name = 'main/links.html'
