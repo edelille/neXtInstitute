@@ -5,7 +5,10 @@ This web app uses Django Python web framework. To install and run this webapp lo
 
 # How to use
 
-1. Make sure Python >3.0 is up and running through command line
+1. Make sure Python >3.0 is up and running through command line, using the following link
+
+  https://www.python.org/downloads/
+
 2.  run the following command:
   
   python3 -m pip install Django
