@@ -6,4 +6,4 @@ admin.site.register(Question)
 admin.site.register(Choice)
 admin.site.register(Person)
 
-# test commit from Penelope
+# test commit from Penelope v2
