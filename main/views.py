@@ -22,11 +22,11 @@ def index(request):
     context = {
         'latest_question_list': latest_question_list,
     }
-    return render(request, 'main/index.html', context)
+    return render(request, 'main-specific/index.html', context)
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'main/detail.html', {'question': question})
+    return render(request, 'main-specific/detail.html', {'question': question})
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
@@ -37,7 +37,7 @@ def vote(request, question_id):
 
 #part 4
 class IndexView(generic.ListView):
-    template_name = 'main/index.html'
+    template_name = 'main-specific/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
@@ -49,11 +49,11 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template_name = 'main/detail.html'
+    template_name = 'main-specific/detail.html'
 
 class ResultsView(generic.DetailView):
     model = Question
-    template_name = 'main/results.html'
+    template_name = 'main-specific/results.html'
 
 
 # Views destined by Ramy
@@ -61,22 +61,22 @@ class ResultsView(generic.DetailView):
 #Principal Investigator | Teaching | Research | Service | Statement | Photos | Links
 
 class PrincipalInvestigatorView(TemplateView):
-    template_name = 'main/principal_investigator.html'
+    template_name = 'main-specific/principal_investigator.html'
 
 class TeachingView(TemplateView):
-    template_name = 'main/teaching.html'
+    template_name = 'main-specific/teaching.html'
 
 class ResearchView(TemplateView):
-    template_name = 'main/research.html'
+    template_name = 'main-specific/research.html'
 
 class ServiceView(TemplateView):
-    template_name = 'main/service.html'
+    template_name = 'main-specific/service.html'
 
 class StatementView(TemplateView):
-    template_name = 'main/statement.html'
+    template_name = 'main-specific/statement.html'
 
 class PhotosView(TemplateView):
-    template_name = 'main/photos.html'
+    template_name = 'main-specific/photos.html'
 
 class LinksView(TemplateView):
-    template_name = 'main/links.html'
+    template_name = 'main-specific/links.html'

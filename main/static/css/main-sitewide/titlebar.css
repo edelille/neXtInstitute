@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
+}
+.inner-header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 200;
+}
+.logo-container h1 span {
+    font-weight: 800;
+}
+
+.basic-navigation {
+    height: 100%;
+    float: right;
+}
+.basic-navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}

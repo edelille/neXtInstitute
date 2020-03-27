@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype HTML>
 <HTML>
 <head>
@@ -7,14 +9,19 @@
     <meta name="author" content="Lam Nguyen">
     <meta name="keywords" content="next, future factories, mechanical engineering, uofsc">
     <title>BASE TITLE</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/base.css' %}">
+ 
+    {% comment %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    {% endcomment %}
 </head>
 <body>
     <!-- titlebar.html is the titlebar -->
-    {% include "main/titlebar.html" %}
+    {% include "main-sitewide/titlebar.html" %}
 
     <!-- navbar.html is the Navigation Bar -->
-    {% include "main/navbar.html" %} 
+    {% include "main-sitewide/navbar.html" %} 
 
     <h1>test css h1 red expected</h1>
     {% block content %}
