@@ -22,22 +22,22 @@ def index(request):
     context = {
         'latest_question_list': latest_question_list,
     }
-    return render(request, 'main-specific/index.html', context)
+    return render(request, 'DjangoTutorial/index.html', context)
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'main-specific/detail.html', {'question': question})
+    return render(request, 'DjangoTutorial/detail.html', {'question': question})
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'polls/results.html', {'question': question})
+    return render(request, 'DjangoTutorial/results.html', {'question': question})
 
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
 
 #part 4
 class IndexView(generic.ListView):
-    template_name = 'main-specific/index.html'
+    template_name = 'DjangoTutorial/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
@@ -49,15 +49,21 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template_name = 'main-specific/detail.html'
+    template_name = 'DjangoTutorial/detail.html'
 
 class ResultsView(generic.DetailView):
     model = Question
-    template_name = 'main-specific/results.html'
+    template_name = 'DjangoTutorial/results.html'
 
+# Secondary Navigation
+
+class HomeView(TemplateView):
+    template_name = "main-specific/home.html"
+
+
+# Main Navigation
 
 # Views destined by Ramy
-
 #Principal Investigator | Teaching | Research | Service | Statement | Photos | Links
 
 class PrincipalInvestigatorView(TemplateView):

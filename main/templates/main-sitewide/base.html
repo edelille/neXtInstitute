@@ -1,3 +1,14 @@
+{% comment %}
+
+    TITLE: base.html
+    AUTHOR: Lam Nguyen
+    DATE: 2020-03-27
+    DESCRIPTION:
+        This is the base design, almost every single page should load from this.
+        There are multiple sections below all organized in the following format.
+
+{% endcomment %}
+
 {% load static %}
 
 <!doctype HTML>
@@ -8,13 +19,10 @@
     <meta name="description" content="website description">
     <meta name="author" content="Lam Nguyen">
     <meta name="keywords" content="next, future factories, mechanical engineering, uofsc">
-    <title>BASE TITLE</title>
+    <title>neXt Institute</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/base.css' %}">
- 
-    {% comment %}
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    {% endcomment %}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b22242fa13.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- titlebar.html is the titlebar -->
@@ -23,9 +31,11 @@
     <!-- navbar.html is the Navigation Bar -->
     {% include "main-sitewide/navbar.html" %} 
 
-    <h1>test css h1 red expected</h1>
     {% block content %}
         replace this "block content"
     {% endblock %}
+
+    <!-- footer.html is the generic Footer -->
+    {% include "main-sitewide/footer.html" %}
 </body>
 </HTML>

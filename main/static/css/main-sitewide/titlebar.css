@@ -9,13 +9,22 @@
     height: 100%;
     display: block;
     margin: 0 auto;
-    background-color: red;
+    background-color: #101010;
 }
 
 .logo-container {
     height: 100%;
     display: table;
     float: left;
+    background-color: #101010;
+
+    /* This is to adjust for the main navigation bar */
+    padding-left: 20px;
+}
+.logo-container a {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .logo-container h1 {
@@ -40,4 +49,12 @@
     display: table;
     float: left;
     padding: 0px 20px;
+}
+.basic-navigation a li {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 16px;
 }
