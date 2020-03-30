@@ -1,0 +1,32 @@
+{% comment %}
+    this is the Navbar file, edit here for changing sitewide Navigation bar
+
+
+    TITLE: navbar.html
+    AUTHOR: Lam Nguyen
+    DATE: 2020-03-27
+    DESCRIPTION: 
+        This is meant to be placed below the titlebar, to be shown sitewide
+
+{% endcomment %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/mainNavigation.css' %}">
+
+<nav>
+    <div class="main-navigation-container">
+        <div class="main-navigation-container-inner">
+            <ul class="main-navigation">
+                <!-- Principal Investigator | Teaching | Research | Service | Statement | Photos | Links -->
+                <a href="principal-investigator"><li>Principal Investigator</li></a>
+                <a href="teaching"><li>Teaching</li></a>
+                <a href="research"><li>Research</li></a>
+                <a href="service"><li>Service</li></a>
+                <a href="statement"><li>Statement</li></a>
+                <a href="photos"><li>Photos</li></a>
+                <a href="links"><li>Links</li></a>
+            </ul>
+        </div main-navigation-container-inner>
+    </div main-navigation-container>
+</nav>

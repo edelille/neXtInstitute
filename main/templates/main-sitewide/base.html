@@ -1,0 +1,41 @@
+{% comment %}
+
+    TITLE: base.html
+    AUTHOR: Lam Nguyen
+    DATE: 2020-03-27
+    DESCRIPTION:
+        This is the base design, almost every single page should load from this.
+        There are multiple sections below all organized in the following format.
+
+{% endcomment %}
+
+{% load static %}
+
+<!doctype HTML>
+<HTML>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="website description">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="keywords" content="next, future factories, mechanical engineering, uofsc">
+    <title>neXt Institute</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b22242fa13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- titlebar.html is the titlebar -->
+    {% include "main-sitewide/titlebar.html" %}
+
+    <!-- navbar.html is the Navigation Bar -->
+    {% include "main-sitewide/navbar.html" %} 
+
+    {% block content %}
+        replace this "block content"
+    {% endblock %}
+
+    <!-- footer.html is the generic Footer -->
+    {% include "main-sitewide/footer.html" %}
+</body>
+</HTML>

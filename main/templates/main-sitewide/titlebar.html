@@ -1,0 +1,28 @@
+{% comment %}
+
+    TITLE: titlebar.html
+    AUTHOR: Lam Nguyen
+    DATE: 2020-03-27
+    DESCRIPTION:
+        This is the titlebar, shows the logo and the secondary navbar
+
+{% endcomment %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/titlebar.css' %}">
+
+<header>
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo-container">
+                <a href="home"><h1>neXt<span> Institute </span></h1><a>
+            </div>
+
+            <ul class="basic-navigation">
+                <a href="home"><li>Home</li></a>
+                <a href="about"><li>About us</li></a>
+                <a href="contact"><li>Contact us</li></a>
+            </ul>
+        </div>
+    </div>
+</header>
