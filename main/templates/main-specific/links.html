@@ -2,12 +2,20 @@
 
 {% extends "main-sitewide/base.html" %}
 
+{% load static %}
+
 {% block content %}
 
 <HTML>
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/introBanner.css' %}">
+
 <body>
-    LINKS PAGE
+    <!-- Banner -->
+    <div class="intro-banner img-cont">
+        <img class="object-fit_cover" src="{% static 'images/main-sitewide/example2.jpeg' %}" alt="home-major-image-1">
+    </div>
+
 </body>
 
 </HTML>
