@@ -8,23 +8,17 @@
     float: left;
     width: 100%;
     height: auto;
-    &:nth-child(2n) {
-      clear: left;
-    }
-    &:nth-child(2n+1) {
-      margin-right: 0;
-    }
+    position: relative;
 }
 
-.intro-banner.img-cont img{
-    height: 400px;
-    background-color: #444;
-  }
-  
 .intro-banner.img-cont img[class] {
     width: 100%;
 }
 
 .object-fit_cover {
     object-fit: cover;
+}
+
+.object-fit_contain {
+    object-fit: contain;
 }

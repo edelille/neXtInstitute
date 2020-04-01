@@ -22,7 +22,11 @@
     <title>neXt Institute</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/base.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b22242fa13.js" crossorigin="anonymous"></script>
+    {% block links %}
+        <!-- imported links go here -->
+    {% endblock links %}
 </head>
 <body>
     <!-- titlebar.html is the titlebar -->
@@ -31,9 +35,9 @@
     <!-- navbar.html is the Navigation Bar -->
     {% include "main-sitewide/navbar.html" %} 
 
-    {% block content %}
+    {% block body %}
         replace this "block content"
-    {% endblock %}
+    {% endblock body%}
 
     <!-- footer.html is the generic Footer -->
     {% include "main-sitewide/footer.html" %}

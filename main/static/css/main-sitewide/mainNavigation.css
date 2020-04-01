@@ -4,9 +4,9 @@
     padding: 0px;
     margin: 0px;
     background-color: #d11507;
-
     display: block;
 }
+
 .main-navigation-container-inner {
     width: 1000px;
     height: 100%;
@@ -19,12 +19,14 @@
     height: 100%;
     float: left;
 }
+
 .main-navigation a {
     height: 100%;
     display: table;
     float: left;
     padding: 0px 16px;
 }
+
 .main-navigation a li {
     height: 100%;
     display: table-cell;
@@ -33,4 +35,3 @@
     font-family: "Montserrat";
     font-size: 16px;
 }
-

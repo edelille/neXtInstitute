@@ -13,6 +13,8 @@ urlpatterns = [
 
     # Secondary Navbar
     path('home', views.HomeView.as_view()),
+    path('about', views.AboutView.as_view()),
+    path('contact', views.ContactView.as_view()),
 
     # Main Navigation
     #Principal Investigator | Teaching | Research | Service | Statement | Photos | Links

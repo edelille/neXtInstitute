@@ -60,6 +60,12 @@ class ResultsView(generic.DetailView):
 class HomeView(TemplateView):
     template_name = "main-specific/home.html"
 
+class AboutView(TemplateView):
+    template_name = "main-specific/about.html"
+
+class ContactView(TemplateView):
+    template_name = "main-specific/contact.html"
+
 
 # Main Navigation
 

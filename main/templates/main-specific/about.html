@@ -1,0 +1,35 @@
+<!doctype HTML>
+
+{% extends "main-sitewide/base.html" %}
+
+{% load static %}
+
+{% block links %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/introBanner.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/main-specific/about.css' %}">
+
+{% endblock links %}
+
+{% block body %}
+
+<HTML>
+
+<body>
+    <!-- Banner -->
+    <div class="intro-banner img-cont">
+        <img class="object-fit_cover" src="{% static 'images/main-sitewide/example9.jpeg' %}" alt="home-major-image-1">
+        <div class="text-wrapper">
+            <div class="inner-text-wrapper">
+                <span>WE STRIVE TO FIND THE FUTURE</span>
+            </div>
+            <div class="inner-text-wrapper">
+                <span>RAMY HARIK</span>
+            </div>
+        </div>
+    </div>
+    <h1>Meet the team</h1>
+</body>
+
+</HTML>
+{% endblock body %}

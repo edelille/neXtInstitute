@@ -14,21 +14,43 @@
 
 {% load static %}
 
-{% block content %}
-
-<HTML>
+{% block links %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/main-sitewide/introBanner.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/main-specific/home.css' %}">
+
+{% endblock links %}
+
+
+{% block body %}
+
+<HTML>
 
 <body>
     <!-- Banner -->
     <div class="intro-banner img-cont">
         <img class="object-fit_cover" src="{% static 'images/main-sitewide/example1.jpeg' %}" alt="home-major-image-1">
+        <div class="text-wrapper">
+            <div class="inner-text-wrapper">
+                <span>LOREM IPSUM DOLOR</span><br/>
+                <span>CONSECTATEUR ADIPISCING.</span>
+            </div>
+            <div class="inner-text-wrapper">
+                <span>
+                    Sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris
+                </span
+            </div>
+        </div>
     </div>
-    
-    
+    <div class="body">
+        Test body
+        <!-- Perhaps this should be left empty -->
+    </div>
+
 </body>
 
 </HTML>
 
-{% endblock content %}
+{% endblock body %}
