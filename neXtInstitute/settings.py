@@ -25,7 +25,9 @@ SECRET_KEY = '@rgak!@1ix6x(xu6kvd-lvuzw)5!kst2@y&q4w==zy^ko648^l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'lamn.pythonanywhere.com'
+]
 
 STATICFILES_DIRs = [
     os.path.join(BASE_DIR, "main/static/")
@@ -124,3 +126,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/lamn/neXtInstitute/static'

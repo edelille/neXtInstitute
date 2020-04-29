@@ -1,0 +1,24 @@
+.intro-banner {
+    height: 100%;
+    width: 100%;
+    color: red;
+}
+
+.intro-banner.img-cont {
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.intro-banner.img-cont img[class] {
+    width: 100%;
+}
+
+.object-fit_cover {
+    object-fit: cover;
+}
+
+.object-fit_contain {
+    object-fit: contain;
+}
