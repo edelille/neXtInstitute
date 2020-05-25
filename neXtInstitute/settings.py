@@ -26,7 +26,8 @@ SECRET_KEY = '@rgak!@1ix6x(xu6kvd-lvuzw)5!kst2@y&q4w==zy^ko648^l'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'lamn.pythonanywhere.com'
+    'lamn.pythonanywhere.com',
+    '127.0.0.1', #localhost
 ]
 
 STATICFILES_DIRs = [
