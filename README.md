@@ -7,13 +7,13 @@ This web app uses Django Python web framework. To install and run this webapp lo
 
 1. Download my repository as a .zip file and unpack
 
-2. Make sure Python >3.0 is up and running through command line, using the following link
+2. Make sure Python 3.8 is up and running through command line, using the following link
 
   https://www.python.org/downloads/
 
-3.  Install Django-Python using the following command
+3.  Install Django-Python using the following commands
   
-  python3 -m pip install Django
+  pip install
   
 4. In the surface directory level (where manage.py) exists, run:
 
@@ -22,3 +22,9 @@ This web app uses Django Python web framework. To install and run this webapp lo
 5. Open your browser and view the website at the default url:
 
   localhost:8000
+
+```
+
+test
+test
+```
