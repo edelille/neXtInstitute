@@ -26,9 +26,6 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Source Virtual Environment for Python 3.8 
-      run: |
-        source env\py3.8env\Scripts\activate
     - name: Install Dependencies
       run: |
         pip install -r requirements
