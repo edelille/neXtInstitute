@@ -3,22 +3,32 @@
 
 This web app uses Django Python web framework. To install and run this webapp locally.
 
-## How to use
+## Running the server locally
 
-1. Download my repository as a .zip file and unpack
-
-2. Make sure Python >3.0 is up and running through command line, using the following link
+1. Make sure Python 3.8 is up and running through command line, using the following link
 
   https://www.python.org/downloads/
 
-3.  Install Django-Python using the following command
-  
-  python3 -m pip install Django
-  
-4. In the surface directory level (where manage.py) exists, run:
+2.a. To run the app on windows, run the following commands in command prompt (windows):
 
-  python3 manage.py runserver
+```bash
+git clone https://github.com/lamn18/neXtInstitute.git
+cd neXtInstitute
+.\env\py3.8env\Scripts\activate
+pip install -r requirements.txt
+py manage.py migrate
+py manage.py runserver
+```
 
-5. Open your browser and view the website at the default url:
+2.b. Additionally, to run the server on a linux machine, run these set of commands (linux/macOs):
 
-  localhost:8000
+```bash
+git clone https://github.com/lamn18/neXtInstitute.git
+cd neXtInstitute
+source env\py3.8env\Scripts\activate
+pip install -r requirements.txt
+python3 manage.py migrate
+python3 manage.py runserver
+```
+
+3. After running the following commands, you can find the local development server in your browser at localhost:8000 by default
