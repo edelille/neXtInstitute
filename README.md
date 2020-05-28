@@ -15,7 +15,7 @@ This web app uses Django Python web framework. To install and run this webapp lo
 git clone https://github.com/lamn18/neXtInstitute.git
 cd neXtInstitute
 .\env\py3.8env\Scripts\activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 py manage.py migrate
 py manage.py runserver
 ```
